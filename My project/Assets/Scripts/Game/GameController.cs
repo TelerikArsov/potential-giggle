@@ -4,16 +4,22 @@ using UnityEngine;
 
 public class GameController : MonoBehaviour
 {
+    [SerializeField]
+    public EnemiesController enemiesController;
+
     public delegate void NotifyCast(GameObject caster);
     public List<GameObject> Heroes;
     public event NotifyCast OnCast;
     // Start is called before the first frame update
     void Start()
     {
+        enemiesController = new EnemiesController();
+
         foreach (GameObject heroObject in Heroes)
         {
             Hero hero = heroObject.GetComponent<Hero>();
             OnCast += hero.OnCastHandler;
+            enemiesController.OnEnemySpawn += hero.OnEnemySpawn;
         }
     }
 
@@ -21,6 +27,7 @@ public class GameController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        enemiesController.Update();
         foreach (GameObject heroObject in Heroes)
         {
             Hero hero = heroObject.GetComponent<Hero>();
@@ -29,5 +36,10 @@ public class GameController : MonoBehaviour
                 OnCast?.Invoke(heroObject);
             }
         }
+    }
+
+    private void FixedUpdate()
+    {
+        enemiesController.FixedUpdate();
     }
 }

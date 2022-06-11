@@ -10,7 +10,7 @@ public class FireMage : Hero
     {
         if(Time.time > nextFire)
         {
-            Debug.Log("FIRE MAGE Cast");
+            //Debug.Log("FIRE MAGE Cast");
             nextFire = Time.time + castTime;
             return true;
         }
@@ -21,7 +21,12 @@ public class FireMage : Hero
     {
         if(caster != gameObject)
         {
-            Debug.Log("ON CAST. FIRE MAGE HANDLER");
+            //Debug.Log("ON CAST. FIRE MAGE HANDLER");
         }
+    }
+
+    public override void OnEnemySpawn(GameObject spawned)
+    {
+        Debug.Log("ENEMY SPAWNED ZAPZ ZAP");
     }
 }

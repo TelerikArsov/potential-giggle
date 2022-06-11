@@ -10,7 +10,7 @@ public class Rogue : Hero
     {
         if(Time.time > nextFire)
         {
-            Debug.Log("Rogue MAGE Cast");
+            //Debug.Log("Rogue MAGE Cast");
             nextFire = Time.time + castTime;
             return true;
         }
