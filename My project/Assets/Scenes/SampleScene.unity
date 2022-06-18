@@ -168,7 +168,7 @@ Transform:
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 0}
-  m_RootOrder: 1
+  m_RootOrder: 2
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &373159814 stripped
 GameObject:
@@ -228,7 +228,7 @@ Camera:
   far clip plane: 1000
   field of view: 60
   orthographic: 1
-  orthographic size: 5
+  orthographic size: 10
   m_Depth: -1
   m_CullingMask:
     serializedVersion: 2
@@ -271,17 +271,33 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
+    - target: {fileID: 3596617810394072422, guid: 00d0fcace57bb6b40ac140493d89daa1, type: 3}
+      propertyPath: m_Size.x
+      value: 0.4460715
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596617810394072422, guid: 00d0fcace57bb6b40ac140493d89daa1, type: 3}
+      propertyPath: m_Size.y
+      value: 1.0134538
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596617810394072422, guid: 00d0fcace57bb6b40ac140493d89daa1, type: 3}
+      propertyPath: m_Offset.x
+      value: -0.014873832
+      objectReference: {fileID: 0}
+    - target: {fileID: 3596617810394072422, guid: 00d0fcace57bb6b40ac140493d89daa1, type: 3}
+      propertyPath: m_Offset.y
+      value: -0.025348306
+      objectReference: {fileID: 0}
     - target: {fileID: 3596617810394072424, guid: 00d0fcace57bb6b40ac140493d89daa1, type: 3}
       propertyPath: m_RootOrder
       value: 3
       objectReference: {fileID: 0}
     - target: {fileID: 3596617810394072424, guid: 00d0fcace57bb6b40ac140493d89daa1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.062
+      value: -1.333
       objectReference: {fileID: 0}
     - target: {fileID: 3596617810394072424, guid: 00d0fcace57bb6b40ac140493d89daa1, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.475
+      value: 0.498
       objectReference: {fileID: 0}
     - target: {fileID: 3596617810394072424, guid: 00d0fcace57bb6b40ac140493d89daa1, type: 3}
       propertyPath: m_LocalPosition.z
@@ -315,6 +331,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 3596617810394072425, guid: 00d0fcace57bb6b40ac140493d89daa1, type: 3}
+      propertyPath: m_Materials.Array.data[0]
+      value: 
+      objectReference: {fileID: 2100000, guid: 70079053e0debce498c1a3e942052c58, type: 2}
     - target: {fileID: 3596617810394072426, guid: 00d0fcace57bb6b40ac140493d89daa1, type: 3}
       propertyPath: m_Name
       value: Rogue
@@ -330,15 +350,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 3596617810394072424, guid: 253969e94750283439c0e3327a7f13ca, type: 3}
       propertyPath: m_RootOrder
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 3596617810394072424, guid: 253969e94750283439c0e3327a7f13ca, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -1.062
+      value: -0.047
       objectReference: {fileID: 0}
     - target: {fileID: 3596617810394072424, guid: 253969e94750283439c0e3327a7f13ca, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 0.475
+      value: 0.469
       objectReference: {fileID: 0}
     - target: {fileID: 3596617810394072424, guid: 253969e94750283439c0e3327a7f13ca, type: 3}
       propertyPath: m_LocalPosition.z
